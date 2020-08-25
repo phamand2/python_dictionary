@@ -1,3 +1,13 @@
+
+def countFriends(dictionary):
+  count = 0
+  if 'friends' in dictionary.keys():
+    for friend in dictionary['friends']:
+      count += 1
+  dictionary['friends-count'] = count    
+  return dictionary
+
+
 ramit = {
   'name': 'Ramit',
   'email': 'ramit@gmail.com',
@@ -16,3 +26,4 @@ ramit = {
   ]
 }
 
+print(countFriends(ramit))
